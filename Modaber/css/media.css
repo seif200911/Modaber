@@ -1,0 +1,136 @@
+@media (max-width: 1280px) {
+  .sidebar {
+    width: 80px;
+    overflow-y: visible;
+  }
+  .sidebar .container .logo {
+    justify-content: center;
+    gap: 0;
+  }
+  .sidebar .container .logo h1,
+  .sidebar .container .logo span {
+    display: none;
+  }
+  .sidebar nav {
+    margin-bottom: 16px;
+  }
+  .sidebar nav ul li {
+    justify-content: center;
+  }
+  .sidebar nav ul li span {
+    display: none;
+  }
+  .quick-actions h3 {
+    display: none;
+  }
+  .quick-actions ul li {
+    padding: 8px;
+    justify-content: center;
+  }
+  .quick-actions ul li span {
+    display: none;
+  }
+  main {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-widgets .container .notifications {
+    grid-column: span 6;
+    order: 1;
+  }
+  .dashboard-widgets .container .transactions {
+    grid-column: span 12;
+    order: 3;
+  }
+  .dashboard-widgets .container .bills {
+    grid-column: span 6;
+    order: 4;
+  }
+  .dashboard-widgets .container .budget {
+    grid-column: span 6;
+    grid-row: span 1;
+    order: 6;
+  }
+  .dashboard-widgets .container .income-vs-expenses {
+    grid-column: span 6;
+    order: 2;
+  }
+  .dashboard-widgets .container .payment {
+    grid-column: span 6;
+    grid-row: span 1;
+    order: 7;
+  }
+  .dashboard-widgets .container .account {
+    grid-column: span 6;
+    order: 5;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .summary-cards .container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 568px) {
+  header .container {
+    padding: 16px;
+    align-items: start;
+    flex-direction: column;
+  }
+  header .container .logo h1 {
+    font-size: 24px;
+  }
+  header .container .logo h1 + span {
+    font-size: 12px;
+  }
+  .state-logo {
+    display: none;
+  }
+  .state-header {
+    display: flex;
+    width: 100%;
+  }
+  header .container .user {
+    width: 100%;
+  }
+  header .container .user .user-name .name {
+    display: none;
+  }
+  .dashboard-widgets .container .notifications {
+    grid-column: span 12;
+  }
+  .dashboard-widgets .container .transactions {
+    grid-column: span 12;
+    order: 2;
+  }
+  .dashboard-widgets .container .bills {
+    grid-column: span 12;
+    order: 3;
+  }
+  .dashboard-widgets .container .budget {
+    grid-column: span 12;
+    order: 4;
+  }
+  .dashboard-widgets .container .income-vs-expenses {
+    grid-column: span 12;
+    order: 5;
+  }
+  .dashboard-widgets .container .payment {
+    grid-column: span 12;
+    order: 7;
+  }
+  .dashboard-widgets .container .account {
+    grid-column: span 12;
+    order: 6;
+  }
+}
+
